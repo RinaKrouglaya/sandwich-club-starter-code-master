@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/details_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_iv"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_gravity="start"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/sandwich_picture_content_description"
+                android:padding="@dimen/overall_padding"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/sandwich_name_label"
+                style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_margin"
+                android:layout_marginLeft="@dimen/details_margin"
+                android:padding="@dimen/details_small_padding"
+                android:paddingTop="@dimen/overall_padding"
+                android:text="@string/detail_main_name_label"
+                android:textColor="@color/details_text_dark_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sandwich_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/overall_padding"
+                android:paddingRight="@dimen/overall_padding"
+                android:paddingBottom="@dimen/details_line_padding"
+                android:textColor="@color/details_text_dark_color"
+                tools:text="@string/tools_main_name" />
+
+            <TextView
+                android:id="@+id/also_known_as_label"
+                style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_margin"
+                android:layout_marginLeft="@dimen/details_margin"
+                android:padding="@dimen/details_small_padding"
+                android:paddingTop="@dimen/overall_padding"
+                android:text="@string/detail_also_known_as_label"
+                android:textColor="@color/details_text_dark_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/also_known_as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/overall_padding"
+                android:paddingRight="@dimen/overall_padding"
+                android:paddingBottom="@dimen/details_line_padding"
+                android:textColor="@color/details_text_dark_color"
+                tools:text="@string/tools_also_names_line" />
+
+            <TextView
+                android:id="@+id/ingredients_label"
+                style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_margin"
+                android:layout_marginLeft="@dimen/details_margin"
+                android:padding="@dimen/details_small_padding"
+                android:paddingTop="@dimen/overall_padding"
+                android:text="@string/detail_ingredients_label"
+                android:textColor="@color/details_text_dark_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ingredients_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/overall_padding"
+                android:paddingRight="@dimen/overall_padding"
+                android:paddingBottom="@dimen/details_line_padding"
+                android:textColor="@color/details_text_dark_color"
+                tools:text="@string/tools_also_names_line" />
+
+            <TextView
+                android:id="@+id/origin_label"
+                style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_margin"
+                android:layout_marginLeft="@dimen/details_margin"
+                android:padding="@dimen/details_small_padding"
+                android:paddingTop="@dimen/overall_padding"
+                android:text="@string/detail_place_of_origin_label"
+                android:textColor="@color/details_text_dark_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place_of_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/overall_padding"
+                android:paddingRight="@dimen/overall_padding"
+                android:paddingBottom="@dimen/details_line_padding"
+                android:textColor="@color/details_text_dark_color"
+                tools:text="@string/tools_origin" />
+
+            <TextView
+                android:id="@+id/description_label"
+                style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_margin"
+                android:layout_marginLeft="@dimen/details_margin"
+                android:padding="@dimen/details_small_padding"
+                android:paddingTop="@dimen/overall_padding"
+                android:text="@string/detail_description_label"
+                android:textColor="@color/details_text_dark_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sandwich_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/overall_padding"
+                android:paddingRight="@dimen/overall_padding"
+                android:paddingBottom="@dimen/details_line_padding"
+                android:textColor="@color/details_text_dark_color"
+                tools:text="@string/tools_sandwich_description" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
