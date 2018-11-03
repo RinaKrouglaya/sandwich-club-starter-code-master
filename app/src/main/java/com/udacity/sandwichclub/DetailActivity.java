@@ -126,6 +126,5 @@ public class DetailActivity extends AppCompatActivity {
         else {
             description.setText(currentSandwich.getDescription());
         }
-
     }
 }
